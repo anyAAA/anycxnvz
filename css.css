@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    width: 6.4rem;
+    height: 1rem;
+    background: #f0f0f0;
+    border-bottom: 1px solid #c4c4c4;
+}
+header:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+header a{
+    float: left;
+    display: block;
+    width: 0.5rem;
+    height: 0.42rem;
+    font-size: 0;
+}
+header a img{
+    width: 100%;
+    height: 100%;
+}
+header h2{
+    display: inline-block;
+    font-size: 0.42rem;
+    text-align: center;
+    line-height: 1rem;
+    margin-left: 1.45rem;
+    font-weight: 400;
+    float: left;
+}
+header a:nth-child(1){
+    margin: 0.26rem 0 0 0.43rem;
+}
+header a:nth-child(3){
+    margin: 0.26rem 0.43rem 0 0 ;
+}
+nav{
+    width: 6.4rem;
+    height: 0.88rem;
+}
+nav>ul>li:first-child{
+    background: #e3e3e3;
+}
+nav>ul>li{
+    float: left;
+    width: 2.13rem;
+}
+nav>ul>li:nth-child(3){
+    position: relative;
+}
+.box{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    z-index: 999;
+}
+.box li a{
+    background: url("images/yinying.jpg") no-repeat right center;
+    margin-right: 0.2rem;
+}
+nav>ul>li>a{
+    display: block;
+    height: 0.88rem;
+    font-size: 0.35rem;
+    line-height: 0.88rem;
+    color: black;
+    text-align: center;
+    background: url("images/youxiajiao1.jpg") right bottom no-repeat;
+}
+nav>ul>li:nth-child(1) a {
+    background: url("images/youxiajiao.jpg") right bottom no-repeat;
+}
+nav .box{
+    width: 2.34rem;
+}
+nav .box li{
+    width: 2.54rem;
+    height: 0.47rem;
+    background: black;
+    opacity: 0.8;
+    border-bottom: 1px solid #5a514f;
+}
+.chid li .box li a{
+    display: block;
+    height: 0.47rem;
+    line-height: 0.47rem;
+    font-size: 0.25rem;
+    color:white;
+    padding-left: 0.3rem;
+}
+/*轮播图 banner*/
+/*4张图片*/
+.swiper-container{
+    width: 6.4rem;
+    height: 3.1rem;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-container .swiper-wrapper{
+    width: 50rem;
+    height: 3.1rem;
+    /*过渡效果*/
+    transition: transform 0.5s linear;
+}
+.swiper-container .swiper-wrapper li{
+    width: 6.4rem;
+    height: 3.1rem;
+    float: left;
+}
+.swiper-container .swiper-wrapper li img{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+/*4个按钮*/
+.num{
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    margin-left: -0.58rem;
+}
+.num li{
+    width: 0.2rem;
+    height: 0.2rem;
+    background: #9a9a9a;
+    border-radius: 50%;
+    float: left;
+    margin-left: 0.1rem;
+}
+.num .cur{
+    background: cornflowerblue;
+}
+/*二维码 留言 购物车 平台介绍*/
+.got{
+    margin-top: 0.22rem;
+    width: 6.4rem;
+    height: 1.89rem;
+    background: white;
+}
+.got>div{
+
+    float: left;
+    height: 1.36rem;
+    width: 1.01rem;
+    margin-left: 0.64rem;
+}
+.got div a img{
+    width: 0.95rem;
+    height: 0.95rem;
+}
+.got div p{
+    font-size: 0.2rem;
+    text-align: center;
+}
+/*热卖专区 每周新品 连衣裙专卖 雪纺衫专区*/
+.just{
+    margin-top: 0.08rem;
+    width: 6.4rem;
+    height: 3.8rem;
+}
+.just:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.just .top{
+    width: 6.4rem;
+    height: 1.97rem;
+    background: white;
+    margin-bottom: 0.08rem;
+}
+.just .top:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.just .top>div{
+    width: 3.08rem;
+    height: 1.78rem;
+    float: left;
+    margin: 0.08rem 0 0.08rem 0.08rem;
+}
+.just .top>div a{
+    display: block;
+    width: 3.08rem;
+    height: 1.78rem;
+}
+.just .top>div img{
+    width: 100%;
+    height: 100%;
+}
+.just .bottom{
+    width: 6.4rem;
+    height: 1.97rem;
+    background: white;
+}
+/*清除浮动*/
+.just .bottom：after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.just .bottom>div{
+    width: 3.08rem;
+    height: 1.78rem;
+    float: left;
+    margin: 0.08rem 0 0.08rem 0.08rem;
+}
+.just .bottom>div a{
+    display: block;
+    width: 3.08rem;
+    height: 1.78rem;
+}
+.just .bottom>div img{
+    width: 100%;
+    height: 100%;
+}
+/*推荐商家*/
+.merchant{
+    margin-top: 0.3rem;
+    padding: 0.18rem 0.16rem 0.11rem 0.16rem;
+    background: white;
+}
+.merchant:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.merchant .top1{
+    width: 2.75rem;
+    height: 3.3rem;
+    margin-right: 0.11rem;
+    float: left;
+
+}
+.merchant .top1 h3{
+    font-size: 0.4rem;
+    font-weight: 500;
+    color: #f69f07;
+}
+.merchant .top1 p{
+    font-size: 0.25rem;
+    line-height: 0.6rem;
+    font-weight: 600;
+}
+.merchant .top1 .clothes{
+    width: 2.61rem;
+    height: 1.78rem;
+}
+.merchant .top1 .clothes a{
+    font-size: 0;
+}
+.merchant .top1 .clothes img{
+    width: 100%;
+    height: 100%;
+}
+.merchant .top1 span{
+    font-size: 0.25rem;
+    float: right;
+    margin-top: 0.1rem;
+}
+/*右面图片+文字*/
+.top2{
+    width: 3.08rem;
+    height: 1.49rem;
+    float: right;
+    margin-left: 0.1rem;
+}
+.right1_top:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.right1_top{
+    padding: 0.08rem;
+    margin-top: 0.22rem;
+}
+.right1_top p{
+    text-align: right;
+}
+.right1_top>div{
+    width: 1.23rem;
+    height: 1.23rem;
+    float: left;
+}
+.right1_top>div>img{
+    width: 100%;
+    height: 100%;
+}
+.right1_top p{
+    font-size: 0.20rem;
+    width: 1.2rem;
+
+}
+article{
+    float: right;
+}
+
+/*春装特惠风暴*/
+.live{
+    margin-top: 0.07rem;
+    width: 6.22rem;
+    padding: 0.09rem;
+    /*height: 1.62rem;*/
+    background: white;
+}
+.live>div{
+    width: 6.24rem;
+    height: 1.45rem;
+}
+.live>div a{
+    font-size: 0;
+}
+.live>div img{
+    width: 100%;
+    height: 100%;
+}
+/*夏装上新*/
+h1{
+    display: block;
+    font-size:0.4rem;
+    color: #5e5d5d;
+    line-height: 0.6rem;
+    height: 0.6rem;
+    margin-left: 0.24rem;
+    font-weight: 400;
+}
+
+.sony{
+    width:6.24rem;
+    background: white;
+    padding: 0.08rem;
+}
+.sony>div{
+    width: 6.23rem;
+    height: 2.74rem;
+}
+.sony>div a{
+    font-size: 0;
+}
+.sony>div img{
+    width: 100%;
+    height: 100%;
+}
+/*加入购物车*/
+.edit{
+    height: 1.85rem;
+    width: 6.26rem;
+    background: white;
+    padding: 0.07rem;
+    margin-top: 0.08rem;
+}
+.edit:after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.edit .edit_l{
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid #d7d6d6;
+    float: left;
+}
+.edit .edit_l>div{
+    width: 1.71rem;
+    height: 1.71rem;
+    padding: 0.05rem;
+
+}
+.edit .edit_l>div>img{
+    width: 100%;
+    height: 100%;
+}
+/*右面*/
+.edit .edit_r{
+    width: 3.84rem;
+    float: left;
+    margin-left: 0.21rem;
+}
+.edit .edit_r:after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+ }
+.edit .edit_r h4{
+    font-size: 0.28rem;
+    font-weight: 500;
+}
+.edit .edit_r .only{
+    width: 2.6rem;
+    height: 0.7rem;
+    float: left;
+}
+.edit .edit_r .only p{
+    display: block;
+    color: #f55494;
+    font-size: 0.35rem;
+    height: 0.3rem;
+    margin-top: 0.2rem;
+
+}
+.edit .edit_r .only span{
+    display: block;
+    height: 0.32rem;
+    color: #b7b6b6;
+    font-size: 0.25rem;
+    margin-top: 0.2rem;
+}
+.edit .edit_r .you{
+    width: 0.68rem;
+    height: 0.62rem;
+    float: left;
+}
+.edit .edit_r .you img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.2rem;
+}
+/*尾部*/
+
+.botto{
+    width: 6.4rem;
+    height:1.06rem;
+    background: white;
+    padding-top: 0.08rem;
+    margin-top: 0.08rem;
+}
+.botto>div{
+    width: 1.28rem;
+    height: 0.98rem;
+    float: left;
+    background: #191717;
+    position: relative;
+}
+.botto>div>div{
+    width: 0.44rem;
+    height: 0.41rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 0.12rem;
+    font-size: 0rem;
+}
+.botto>div>div>img{
+    width: 100%;
+    height: 100%
+}
+.botto>div>p{
+    font-size: 0.25rem;
+    color: white;
+    text-align: center;
+    line-height: 1.62rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
